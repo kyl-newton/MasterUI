@@ -8,12 +8,20 @@
     <script src="./assets/js/foundation.js"></script>
     <script src="./assets/js/templates.js"></script>
     <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/app.js"></script>
   </head>
   <body>
     <div class="grid-frame vertical">
       <div class="grid-content shrink collapse">
         <div class="header-bar">
+          <!-- TOGGLE -->
+          <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <strong>Product Name</strong>
         </div>
       </div>
@@ -21,9 +29,6 @@
         <div ng-include="'templates/partials/nav.html'"></div>
       </div>
       <div ui-view class="grid-content">
-      </div>
-      <div class="grid-content shrink collapse">
-        <div ng-include="'templates/partials/player.html'"></div>
       </div>
     </div>
   </body>
