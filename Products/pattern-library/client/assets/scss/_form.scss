@@ -19,7 +19,8 @@
 // .tba-modifier - TBA Modifier
 // 
 // Markup:
-// TBA HTML
+// <label for="input-id">Label</label><br>
+// <input id="input-id" type="text" placeholder="Placeholder Text">
 //
 // Styleguide 7.1
 
@@ -30,7 +31,8 @@
 // .tba-modifier - TBA Modifier
 // 
 // Markup:
-// TBA HTML
+// <label for="textarea-id">Label</label><br>
+// <textarea id="textarea-id" placeholder="Placeholder Text"></textarea>
 //
 // Styleguide 7.2
 
@@ -41,7 +43,7 @@
 // .tba-modifier - TBA Modifier
 // 
 // Markup:
-// TBA HTML
+// <input id="radio-id" type="radio" value="Radio"><label for="radio-id">Label</label>
 //
 // Styleguide 7.3
 
@@ -52,7 +54,7 @@
 // .tba-modifier - TBA Modifier
 // 
 // Markup:
-// TBA HTML
+// <input id="checkbox-id" type="checkbox" value="Radio"><label for="checkbox-id">Label</label>
 //
 // Styleguide 7.4
 
@@ -63,9 +65,40 @@
 // .tba-modifier - TBA Modifier
 // 
 // Markup:
-// TBA HTML
+// <select>
+// 	<option value="option-1">Option 1</option>
+// 	<option value="option-2">Option 2</option>
+// 	<option value="option-3">Option 3</option>
+// </select>
 //
 // Styleguide 7.5
+
+// Select - Option Groups
+//
+// TBA Description
+//
+// .tba-modifier - TBA Modifier
+// 
+// Markup:
+// <select>
+// 	<optgroup label="Option Group 1">
+// 		<option value="optgrp1-option1">Option 1</option>
+// 		<option value="optgrp1-option2">Option 2</option>
+// 		<option value="optgrp1-option3">Option 3</option>
+// 	</optgroup>
+// 	<optgroup label="Option Group 2">
+// 		<option value="optgrp2-option1">Option 1</option>
+// 		<option value="optgrp2-option2">Option 2</option>
+// 		<option value="optgrp2-option3">Option 3</option>
+// 	</optgroup>
+// 	<optgroup label="Option Group 3">
+// 		<option value="optgrp3-option1">Option 1</option>
+// 		<option value="optgrp3-option2">Option 2</option>
+// 		<option value="optgrp3-option3">Option 3</option>
+// 	</optgroup>
+// </select>
+//
+// Styleguide 7.6
 
 // Select Multiple
 //
@@ -74,9 +107,19 @@
 // .tba-modifier - TBA Modifier
 // 
 // Markup:
-// TBA HTML
+// <select multiple>
+// 	<option value="option-1">Option 1</option>
+// 	<option value="option-2">Option 2</option>
+// 	<option value="option-3">Option 3</option>
+// 	<option value="option-4">Option 4</option>
+// 	<option value="option-5">Option 5</option>
+// 	<option value="option-6">Option 6</option>
+// 	<option value="option-7">Option 7</option>
+// 	<option value="option-8">Option 8</option>
+// 	<option value="option-9">Option 9</option>
+// </select>
 //
-// Styleguide 7.6
+// Styleguide 7.7
 
 // Datepicker
 //
@@ -87,7 +130,7 @@
 // Markup:
 // TBA HTML
 //
-// Styleguide 7.7
+// Styleguide 7.8
 
 // Lookup - Text
 //
@@ -98,7 +141,7 @@
 // Markup:
 // TBA HTML
 //
-// Styleguide 7.8
+// Styleguide 7.9
 
 // Lookup - Select
 //
@@ -109,7 +152,7 @@
 // Markup:
 // TBA HTML
 //
-// Styleguide 7.9
+// Styleguide 7.10
 
 // Lookup - Select Multiple
 //
@@ -120,7 +163,7 @@
 // Markup:
 // TBA HTML
 //
-// Styleguide 7.10
+// Styleguide 7.11
 
 // Picklist
 //
@@ -131,4 +174,4 @@
 // Markup:
 // TBA HTML
 //
-// Styleguide 7.11
+// Styleguide 7.12
