@@ -1,0 +1,85 @@
+		{{!
+		Display each section, in order.
+
+		The "root" element comes first in this loop, and can be detected using
+		the "#ifDepth 1" block as seen below.
+	}}
+	{{#eachSection rootName}}
+	{{#ifDepth 1}}
+	<div class="section-header">
+		<div id="kssref-{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
+			{{else}}
+			<div class="section-body">
+				<section id="kssref-{{referenceURI}}" class="kss-section kss-section--depth-{{depth}}">
+					{{/ifDepth}}
+
+					<div>
+						<h{{depth}} class="kss-title kss-title--level-{{depth}}">
+						<small class="kss-title__ref">
+							Section {{#ifNumeric reference}}
+							{{reference}}
+							{{else}}
+							{{autoincrement}}
+							{{/ifNumeric}}
+						</small>
+						{{header}}
+					</h{{depth}}>
+
+					{{#if parameters}}
+					<ul class="kss-parameters">
+						{{#eachParameter}}
+						<li class="kss-parameters__item">
+							<code class="kss-parameters__name">{{name}}</code>
+							<div class="kss-parameters__description">{{{description}}}</div>
+						</li>
+						{{/eachParameter}}
+					</ul>
+					{{/if}}
+
+					{{#if description}}
+					<div class="kss-description">
+						{{{description}}}
+					</div>
+					{{/if}}
+				</div>
+
+				{{#if markup}}
+				<div class="modifier-group">
+					<div class="modifier-wrapper">
+						{{#if modifiers}}
+						<div class="modifier-description">
+							Default styling
+						</div>
+						{{/if}}
+						<div class="modifier-example">
+							{{{markup}}}
+						</div>
+					</div>
+					{{#eachModifier}}
+					<div class="modifier-wrapper">
+						<div class="modifier-name">
+							{{name}}
+						</div>
+						<div class="modifier-description">
+							{{{description}}}
+						</div>
+						<div class="modifier-example">
+							{{{markup}}}
+						</div>
+					</div>
+					{{/eachModifier}}
+				</div>
+
+				<div>
+					<pre><code>{{markup}}</code></pre>
+				</div>
+				{{/if}}
+
+				{{#ifDepth 1}}
+			</div>
+		</div>
+		{{else}}
+	</section>
+</div>
+{{/ifDepth}}
+{{/eachSection}}

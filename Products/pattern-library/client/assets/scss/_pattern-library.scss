@@ -18,6 +18,7 @@ h1 {
 
 	small {
 		font-size: 12px;
+		display: block;
 	}
 }
 
@@ -27,6 +28,7 @@ h2 {
 
 	small {
 		font-size: 12px;
+		display: block;
 	}
 }
 
@@ -36,6 +38,7 @@ h2 {
 	height: 100%;
 	width: 250px;
 	border-right: 3px solid #DDDDDD;
+	font-size: 14px;
 
 	ul {
 		list-style: none;
@@ -45,6 +48,15 @@ h2 {
 
 	li {
 		padding: 0.75rem 2rem;
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
+
+		&:active, &:visited {
+			color: #000;
+		}
 	}
 
 	.logo {
@@ -61,14 +73,46 @@ h2 {
 	}
 }
 
-#section-header {
+.section-header {
 	background-color: #26AA81;
 	color: #FFFFFF;
-	padding: 50px;
+	padding: 32px 50px;
 }
 
-#section-body {
-	padding: 50px;
+.section-body {
+	margin: 0 50px;
+	padding: 40px 0;
+	border-bottom: 1px dotted #CCC;
+
+	&:last-child {
+		border: 0;
+	}
+}
+
+.modifier-wrapper {
+	border: 1px solid #DDD;
+	padding: 20px;
+	position: relative;
+
+	&:nth-child(n+2) {
+		border-top: 0;
+	}
+}
+
+.modifier-name {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+    background-color: #EEE;
+    border-left: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    font-size: 12px;
+}
+
+.modifier-description {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 // X. Highlight.js

@@ -15,79 +15,10 @@
     <div class="grid-frame">
 
       <!-- Navigation -->
-      <div class="grid-content shrink collapse">
-        <nav id="main-nav">
-          <div class="logo">
-            <img src="/assets/img/ftr-logo-horizontal.svg">
-          </div>
-          <div class="product">
-            Product 1
-          </div>
-          <ul>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-            <li>TBA</li>
-          </ul>
-        </nav>
-      </div>
+      <div ng-include="'templates/partials/nav.html'"></div>
 
       <!-- Content -->
-      <div class="grid-content collapse">
-        <div class="grid-frame vertical">
-          <div class="grid-content shrink collapse">
-            <div id="section-header">
-              <h1><small>Components</small> <br> Section</h1>
-            </div>
-          </div>
-          <div class="grid-content collapse">
-            <div id="section-body">
-              <div class="component">
-                <h2><small>Section 0.0</small> <br> Component</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec sem quam. Aliquam volutpat justo erat, nec tempus lectus fermentum a.</p>
-                <div class="component-examples">
-                  <div class="component-default">
-                    <h3>Default</h3>
-                    <button>Component</button>
-                  </div>
-                  <div class="component-modifier">
-                    <h3>Modified</h3>
-                    <button>Component</button>
-                  </div>
-                  <div class="component-modifier">
-                    <h3>Modified</h3>
-                    <button>Component</button>
-                  </div>
-                  <div class="component-html">
-                    <pre>
-                      <code>
-                        <p>Test</p>
-                        <br>
-                        <p>Test</p>
-                      </code>
-                    </pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div ui-view class="grid-content collapse">
       </div>
 
     </div>
