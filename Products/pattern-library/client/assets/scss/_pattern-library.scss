@@ -35,8 +35,8 @@ h2 {
 // 2. Navigation
 // - - - - - - - - - - - - - - -
 #main-nav {
+	background-color: #333;
 	width: 250px;
-	border-right: 3px solid #DDDDDD;
 	font-size: 14px;
 
 	ul {
@@ -45,26 +45,40 @@ h2 {
 		padding: 0;
 	}
 
-	li {
-		// padding: 0.75rem 2rem;
+	li.foundation {
+		a {
+			&:after {
+				content: "";
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+    			color: #FFF;
+    			vertical-align: middle;
+    			margin: -2px 0 0 4px;
+    			background-image: url("/assets/img/foundation.png");
+    			background-size: 100%;
+			}
+		}
 	}
 
 	a {
-		color: #000;
+		color: #AAA;
 		text-decoration: none;
 
 		&:active, &:visited {
-			color: #000;
+			color: #AAA;
 		}
 	}
 
 	.logo {
-		padding: 20px 30px;
+		padding: 20px 15px;
 		width: 100%;
 	}
 
 	.title {
-		background-color: #EEEEEE;
+		color: #FFF;
+		border-top: 1px solid #AAA;
+		border-bottom: 1px solid #AAA;
 		padding: 10px 30px;
 		text-align: center;
 		text-transform: uppercase;
@@ -83,7 +97,7 @@ h2 {
 	}
 
 	.nav-level-1 {
-		color: #333;
+		color: #EEE;
 
 		> li {
 			padding: 15px 0;
@@ -91,7 +105,8 @@ h2 {
 	}
 
 	.nav-level-2 {
-		color: #666;
+		color: #CCC;
+		font-size: 12px;
 
 		> li {
 			padding: 10px 0;
@@ -99,6 +114,7 @@ h2 {
 	}
 
 	.nav-level-3 {
+		color: #AAA;
 		text-transform: none;
 		font-weight: normal;
 
@@ -111,7 +127,7 @@ h2 {
 .section-header {
 	background-color: #EF3E39;
 	color: #FFFFFF;
-	padding: 32px 50px;
+	padding: 36px 50px;
 }
 
 .section-body {
@@ -165,6 +181,7 @@ h2 {
 	background-color: #00558b;
 	color: #FFF;
 	text-decoration: none;
+	text-transform: uppercase;
 
 	&:visited {
 		color: #FFF;
@@ -172,7 +189,7 @@ h2 {
 
 	span {
 		padding: 0 20px 0 16px;
-		font-size: 14px;
+		font-size: 12px;
 	}
 }
 
