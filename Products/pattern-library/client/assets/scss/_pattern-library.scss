@@ -35,7 +35,6 @@ h2 {
 // 2. Navigation
 // - - - - - - - - - - - - - - -
 #main-nav {
-	height: 100%;
 	width: 250px;
 	border-right: 3px solid #DDDDDD;
 	font-size: 14px;
@@ -47,7 +46,7 @@ h2 {
 	}
 
 	li {
-		padding: 0.75rem 2rem;
+		// padding: 0.75rem 2rem;
 	}
 
 	a {
@@ -61,20 +60,56 @@ h2 {
 
 	.logo {
 		padding: 20px 30px;
+		width: 100%;
 	}
 
-	.product {
+	.title {
 		background-color: #EEEEEE;
 		padding: 10px 30px;
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: bold;
 		font-size: 14px;
+		width: 100%;
+	}
+
+	#nav-groups {
+		padding: 0 2rem;
+	}
+
+	.nav-level-1, .nav-level-2 {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.nav-level-1 {
+		color: #333;
+
+		> li {
+			padding: 15px 0;
+		}
+	}
+
+	.nav-level-2 {
+		color: #666;
+
+		> li {
+			padding: 10px 0;
+		}
+	}
+
+	.nav-level-3 {
+		text-transform: none;
+		font-weight: normal;
+
+		> li {
+			padding: 5px 0;
+		}
 	}
 }
 
 .section-header {
-	background-color: #26AA81;
+	background-color: #EF3E39;
 	color: #FFFFFF;
 	padding: 32px 50px;
 }
@@ -115,6 +150,52 @@ h2 {
     margin-bottom: 10px;
 }
 
+.example-html {
+	tab-size: 4;
+
+	pre {
+		margin: 0;
+	}
+}
+
+.zf-reference {
+	display: inline-block;
+	height: 42px;
+	vertical-align: middle;
+	background-color: #00558b;
+	color: #FFF;
+	text-decoration: none;
+
+	&:visited {
+		color: #FFF;
+	}
+
+	span {
+		padding: 0 20px 0 16px;
+		font-size: 14px;
+	}
+}
+
+.spacing-margin {
+	background-color: #F9CC9D;
+	border: 1px solid #DDD;
+
+	> div {
+		background-color: #EEE;
+		height: 40px;
+	}
+}
+
+.spacing-padding {
+	background-color: #A0C5E8;
+	border: 1px solid #DDD;
+
+	> div {
+		background-color: #EEE;
+		height: 40px;
+	}
+}
+
 // X. Highlight.js
 // - - - - - - - - - - - - - - -
 /*
@@ -126,7 +207,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
+  padding: 20px;
   background: #23241f;
   -webkit-text-size-adjust: none;
 }
