@@ -49,14 +49,14 @@ h2 {
 		a {
 			&:after {
 				content: "";
-				display: inline-block;
-				width: 14px;
-				height: 14px;
+				width: 50px;
+    			height: 10px;	
     			color: #FFF;
-    			vertical-align: middle;
     			margin: -2px 0 0 4px;
-    			background-image: url("/assets/img/foundation.png");
+    			background-image: url("/assets/img/logo-zurb.png");
     			background-size: 100%;
+    			background-repeat: no-repeat;
+    			float: right;
 			}
 		}
 	}
@@ -64,6 +64,7 @@ h2 {
 	a {
 		color: #AAA;
 		text-decoration: none;
+		display: block;
 
 		&:active, &:visited {
 			color: #AAA;
